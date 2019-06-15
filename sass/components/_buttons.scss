@@ -1,0 +1,19 @@
+.btn{
+    border-radius: 30px !important;
+    transition: 0.3s !important;
+    &-primary{
+        background-color: $color-light-primary !important;
+        border: 2px solid $color-light-primary !important;
+        color: $color-primary !important;
+        &:hover{
+            background-color: transparent !important;
+            border: 2px solid $color-primary !important;
+        }
+    }
+}
+.btn-outline-light{
+    &:hover{
+        background-color: white !important;
+        color: $color-primary !important;
+    }
+}

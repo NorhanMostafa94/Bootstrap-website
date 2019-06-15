@@ -1,0 +1,86 @@
+.card-media {
+    .icon {
+        width: 90px;
+        height: 50px; // background: red;
+        position: relative;
+        span {
+            font-size: 38px;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            top: -20px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-width: 0 45px 20px 45px;
+            border-style: solid;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-width: 20px 45px 0 45px;
+            border-style: solid;
+        }
+        &--primary {
+            &:before {
+                border-color: transparent transparent $color-light-primary transparent;
+            }
+            &:after {
+                border-color: $color-light-primary transparent transparent transparent;
+            }
+            background-color: $color-light-primary;
+            span {
+                color: $color-primary;
+            }
+        }
+        &--blue {
+            &:before {
+                border-color: transparent transparent $color-light-blue transparent;
+            }
+            &:after {
+                border-color: $color-light-blue transparent transparent transparent;
+            }
+            background-color: $color-light-blue;
+            span {
+                color: $color-blue;
+            }
+        }
+        &--orange {
+            &:before {
+                border-color: transparent transparent $color-light-orange transparent;
+            }
+            &:after {
+                border-color: $color-light-orange transparent transparent transparent;
+            }
+            background-color: $color-light-orange;
+            span {
+                color: $color-orange;
+            }
+        }
+        &--green {
+            &:before {
+                border-color: transparent transparent $color-light-green transparent;
+            }
+            &:after {
+                border-color: $color-light-green transparent transparent transparent;
+            }
+            background-color: $color-light-green;
+            span {
+                color: $color-green;
+            }
+        }
+    }
+    &__body {
+        .text {
+            font-size: 20px;
+            line-height: 1.5;
+            color: $color-dark-gray;
+            font-weight: 400;
+        }
+    }
+}

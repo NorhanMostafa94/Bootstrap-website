@@ -1,0 +1,81 @@
+.feature-img {
+    position: relative;
+    transition: all 0.3s ease; // display: block;
+    z-index: 0; // overflow: hidden;
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    &:hover {
+        z-index: 1;
+        .header {
+            top: -100px;
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+            @media screen and (min-width: 767.98px) {
+                top: -100px;
+            }
+            @media screen and (max-width: 767.98px) {
+                top: -106px;
+            }
+        }
+        .footer {
+            bottom: -100px;
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+        }
+        .feature__img {
+            -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+            transition: all 0.3s ease;
+        }
+    }
+    &__img {
+        transition: all 0.3s ease;
+    }
+    .header {
+        background-color: white;
+        height: 90px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+        transition: all 0.3s ease;
+        h3 {
+            font-size: 18px;
+            color: $color-dark-gray;
+            font-weight: 400;
+        }
+        span {
+            font-size: 14px;
+            color: $color-light-gray;
+        }
+    }
+    .footer {
+        display: flex;
+        background-color: white;
+        height: 90px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        z-index: -1;
+        transition: all 0.3s ease;
+        overflow: hidden;
+        .user-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        &__text {
+            h3 {
+                font-size: 18px;
+                color: #404044;
+                font-weight: 400;
+            }
+            span {
+                font-size: 14px;
+                color: $color-light-gray;
+            }
+        }
+    }
+}

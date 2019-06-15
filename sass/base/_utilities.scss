@@ -1,0 +1,49 @@
+.uppercase{
+    text-transform: uppercase;
+}
+
+.text-white{
+    color: white;
+}
+
+.text-transparent{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-opacity{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.bg-gradient{
+    background: linear-gradient(80deg, #ee76ad 0%, #efac78 100%);
+}
+
+.bg-white{
+    background-color: $color-white;
+}
+
+.bg-light-gray{
+    background-color: #f8faff;
+}
+
+.bg-blue{
+    background-color: $color-blue;
+}
+
+.font-weight-4{
+    font-weight: 400 !important;
+}
+
+.shadow-right{
+    -webkit-box-shadow: 20px 20px 0 0 $color-light-primary;
+    box-shadow: 20px 20px 0 0 $color-light-primary;
+}
+
+.shadow-left{
+    -webkit-box-shadow: -20px 20px 0 0 $color-light-primary;
+    box-shadow: -20px 20px 0 0 $color-light-primary;
+}

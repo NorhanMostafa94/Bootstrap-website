@@ -1,0 +1,25 @@
+.subscribe-form {
+    .form-group {
+        position: relative;
+        span{
+            color: $color-white;
+            position: absolute;
+            right: 20px;
+            top: 30%;
+        }
+        input {
+            border: 1px solid $color-white;
+            background-color: transparent;
+            border-radius: 30px;
+            height: 52px !important;
+            color: $color-white !important;
+            font-size: 18px;
+            &:focus {
+                box-shadow: 0 0 0 0 transparent;
+            }
+        }
+        ::placeholder {
+            color: $color-white;
+        }
+    }
+}

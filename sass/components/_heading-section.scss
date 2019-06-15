@@ -1,0 +1,32 @@
+.heading-sec{
+    padding: 6em;
+    h1{
+        font-size: 38px;
+        font-weight: 300;
+        color: $color-dark-gray;
+        line-height: 1.5;
+        @media screen and (max-width:767.98px){
+            font-size: 28px;
+        }
+    }
+    
+    h2{
+        font-size: 38px;
+        line-height: 1.5;
+        color: $color-dark-gray;
+        font-weight: 700;
+        @media screen and (max-width:767.98px){
+            font-size: 28px;
+        }
+    }
+    strong{
+        background-color: $color-light-orange;
+        color: $color-orange;
+        font-weight: 700;
+    }
+    .subheading{
+        font-size: 13px;
+        color: $color-light-gray;
+        letter-spacing: 2px;
+    }
+}

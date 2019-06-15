@@ -1,0 +1,15 @@
+.slider {
+    height: 520px;
+    &__text {
+        @media screen and (max-width:990px){
+            font-size: 40px;
+        }
+        font-size: 55px;
+        color: #fff;
+        line-height: 1.2;
+        font-weight: 300;
+        strong{
+            font-weight: 800;
+        }
+    }
+}
